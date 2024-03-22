@@ -1,8 +1,7 @@
 import { createElement } from "react";
 
-import { HelloWorldSample } from "./components/HelloWorldSample";
-import "./ui/AutoDarkMode.css";
+import { DarkReader } from "./components/DarkReader";
 
-export function AutoDarkMode({ sampleText }) {
-    return <HelloWorldSample sampleText={sampleText} />;
+export function AutoDarkMode({ darkEnabled }) {
+    return <DarkReader darkEnabled={darkEnabled} />;
 }
